@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio de Ricardo Hernández - Desarrollador de Aplicaciones Multiplataforma">
+    <title>Ricardo Hernández | Portfolio</title>
+    
+    <!-- Font Awesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Enlace a CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Encabezado con navegación -->
+    <header class="header">
+        <nav class="nav">
+            <a href="#inicio" class="nav-logo">RH</a>
+            
+            <!-- Menú de navegación -->
+            <ul class="nav-menu">
+                <li><a href="#inicio" class="nav-link">Inicio</a></li>
+                <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
+                <li><a href="#habilidades" class="nav-link">Habilidades</a></li>
+                <li><a href="#contacto" class="nav-link">Contacto</a></li>
+            </ul>
+            
+            <!-- Botón para modo oscuro -->
+            <button class="theme-toggle" id="themeToggle" aria-label="Cambiar modo">
+                <i class="fas fa-moon"></i>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Sección de Inicio (Hero) -->
+    <section id="inicio" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Hola, soy Ricardo Hernández</h1>
+                <p class="hero-subtitle">Desarrollador de Aplicaciones Multiplataforma (DAM)</p>
+                <p class="hero-description">
+                    Soy un desarrollador apasionado por crear soluciones innovadoras y experiencias 
+                    de usuario excepcionales. Especializado en desarrollo web, y aplicaciones móviles y de escritorio, 
+                    siempre busco aprender nuevas tecnologías y mejorar mis habilidades.
+                </p>
+                
+                <!-- Botones de redes sociales -->
+                <div class="social-links">
+                    <a href="https://github.com" target="_blank" class="social-btn" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" class="social-btn" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://twitter.com" target="_blank" class="social-btn" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Foto de perfil -->
+            <div class="hero-image">
+                <img src="images/perfil.jpg" alt="Foto de perfil de Ricardo Hernández" class="profile-photo" onerror="this.src='https://via.placeholder.com/300x300?text=Foto+de+Perfil'">
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Proyectos -->
+    <section id="proyectos" class="projects">
+        <div class="container">
+            <h2 class="section-title">Mis Proyectos</h2>
+            
+            <div class="projects-grid">
+                <!-- Proyecto 1 -->
+                <article class="project-card">
+                    <img src="images/proyecto1.jpg" alt="Proyecto 1" class="project-image" onerror="this.src='https://via.placeholder.com/400x250?text=Proyecto+1'">
+                    <div class="project-content">
+                        <h3 class="project-title">E-Commerce App</h3>
+                        <p class="project-description">
+                            Aplicación de comercio electrónico completa con carrito de compras, 
+                            pasarela de pagos y panel de administración.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">MongoDB</span>
+                        </div>
+                        <div class="project-buttons">
+                            <a href="#" class="btn btn-primary">Ver código</a>
+                            <a href="#" class="btn btn-secondary">Demo en vivo</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Proyecto 2 -->
+                <article class="project-card">
+                    <img src="images/proyecto2.jpg" alt="Proyecto 2" class="project-image" onerror="this.src='https://via.placeholder.com/400x250?text=Proyecto+2'">
+                    <div class="project-content">
+                        <h3 class="project-title">Task Manager</h3>
+                        <p class="project-description">
+                            Aplicación de gestión de tareas con autenticación de usuarios, 
+                            organización por proyectos y notificaciones en tiempo real.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Vue.js</span>
+                            <span class="tag">Firebase</span>
+                            <span class="tag">CSS3</span>
+                        </div>
+                        <div class="project-buttons">
+                            <a href="#" class="btn btn-primary">Ver código</a>
+                            <a href="#" class="btn btn-secondary">Demo en vivo</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Proyecto 3 -->
+                <article class="project-card">
+                    <img src="images/proyecto3.jpg" alt="Proyecto 3" class="project-image" onerror="this.src='https://via.placeholder.com/400x250?text=Proyecto+3'">
+                    <div class="project-content">
+                        <h3 class="project-title">Weather Dashboard</h3>
+                        <p class="project-description">
+                            Dashboard meteorológico con pronóstico de 7 días, 
+                            visualización de datos y ubicación geográfica automática.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">API</span>
+                            <span class="tag">HTML5</span>
+                        </div>
+                        <div class="project-buttons">
+                            <a href="#" class="btn btn-primary">Ver código</a>
+                            <a href="#" class="btn btn-secondary">Demo en vivo</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Habilidades -->
+    <section id="habilidades" class="skills">
+        <div class="container">
+            <h2 class="section-title">Habilidades Técnicas</h2>
+            
+            <div class="skills-grid">
+                <!-- Habilidad: HTML -->
+                <div class="skill-card">
+                    <i class="fab fa-html5 skill-icon"></i>
+                    <span class="skill-name">HTML5</span>
+                </div>
+                
+                <!-- Habilidad: CSS -->
+                <div class="skill-card">
+                    <i class="fab fa-css3-alt skill-icon"></i>
+                    <span class="skill-name">CSS3</span>
+                </div>
+                
+                <!-- Habilidad: JavaScript -->
+                <div class="skill-card">
+                    <i class="fab fa-js skill-icon"></i>
+                    <span class="skill-name">JavaScript</span>
+                </div>
+                
+                <!-- Habilidad: React -->
+                <div class="skill-card">
+                    <i class="fab fa-react skill-icon"></i>
+                    <span class="skill-name">React</span>
+                </div>
+                
+                <!-- Habilidad: Python -->
+                <div class="skill-card">
+                    <i class="fab fa-python skill-icon"></i>
+                    <span class="skill-name">Python</span>
+                </div>
+                
+                <!-- Habilidad: Node.js -->
+                <div class="skill-card">
+                    <i class="fab fa-node-js skill-icon"></i>
+                    <span class="skill-name">Node.js</span>
+                </div>
+                
+                <!-- Habilidad: Git -->
+                <div class="skill-card">
+                    <i class="fab fa-git-alt skill-icon"></i>
+                    <span class="skill-name">Git</span>
+                </div>
+                
+                <!-- Habilidad: Docker -->
+                <div class="skill-card">
+                    <i class="fab fa-docker skill-icon"></i>
+                    <span class="skill-name">Docker</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Contacto -->
+    <section id="contacto" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contacto</h2>
+            <p class="contact-info">¿Tienes alguna pregunta o quieres trabajar conmigo? ¡Escríbeme!</p>
+            <p class="contact-email">Email: <a href="mailto:wellune@hotmail.com">wellune@hotmail.com</a></p>
+            
+            <!-- Formulario de contacto -->
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <label for="name" class="form-label">Nombre</label>
+                    <input type="text" id="name" name="name" class="form-input" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" id="email" name="email" class="form-input" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message" class="form-label">Mensaje</label>
+                    <textarea id="message" name="message" class="form-textarea" rows="5" required></textarea>
+                </div>
+                
+                <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer class="footer">
+        <div class="container">
+            <p class="copyright">&copy; <span id="year"></span> Ricardo Hernández. Todos los derechos reservados.</p>
+            
+            <!-- Enlaces a redes sociales -->
+            <div class="footer-social">
+                <a href="https://github.com" target="_blank" class="social-btn" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://linkedin.com" target="_blank" class="social-btn" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://twitter.com" target="_blank" class="social-btn" aria-label="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Enlace a JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
